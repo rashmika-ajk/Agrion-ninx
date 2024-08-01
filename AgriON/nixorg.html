@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgriON | NixORG</title>
+    <link rel="stylesheet" href="nixorg.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="home.html">
+                    <img src="/assets/images/agrion_logo1.jpg" alt="Logo">
+                </a>
+            </div>
+
+            <div class="center-nav">
+                <ul>
+                    <li><a href="home.html" class="nav-link">Home</a></li>
+                    <li><a href="nix.html" class="nav-link">Nix</a></li>
+                    <li><a href="nixorg.html" class="nav-link">NixORG</a></li>
+                    <li><a href="nixfo.html" class="nav-link">NixFO</a></li>
+                    <li><a href="agro_trips.html" class="nav-link">Agro Trips</a></li>
+                    <li><a href="about.html" class="nav-link">About Us</a></li>
+                </ul>
+            </div>
+
+            <div class="cart-icon">
+                <a href="cart.html">
+                    <img src="/assets/images/org-cart.jpg" alt="Cart" class="cart-icon-image">
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="overlay"></div>
+    <div class="content-container">
+        <div class="sidebar">
+            <h2>Categories</h2>
+            <ul>
+                <li onclick="filterProducts('All')">All Categories</li>
+                <li onclick="filterProducts('Fruits')">Fruits</li>
+                <li onclick="filterProducts('Vegetables')">Vegetables</li>
+                <li onclick="filterProducts('Grains & Cereals')">Grains & Cereals</li>
+                <li onclick="filterProducts('Nuts & Seeds')">Nuts & Seeds</li>
+                <li onclick="filterProducts('Herbs')">Herbs</li>
+                <li onclick="filterProducts('Plants & Trees')">Plants & Trees</li>
+            </ul>
+        </div>
+        <div class="product-grid">
+            <div class="product-card" data-category="Fruits">
+                <div class="product-image">
+                    <img src="/assets/images/org-apples.jpg" alt="Product 1">
+                    <span class="like-btn" onclick="toggleWishlist(this)">♡</span>
+                </div>
+                <h3>Apples (1 Kg)</h3>
+                <p>₹100</p>
+                <button class="add-to-cart" onclick="addToCart(this)">Add to Cart</button>
+            </div>
+            <div class="product-card" data-category="Vegetables">
+                <div class="product-image">
+                    <img src="/assets/images/org-carrots.jpg" alt="Product 2">
+                    <span class="like-btn" onclick="toggleWishlist(this)">♡</span>
+                </div>
+                <h3>Carrots (1 Kg)</h3>
+                <p>₹30</p>
+                <button class="add-to-cart" onclick="addToCart(this)">Add to Cart</button>
+            </div>
+            <div class="product-card" data-category="Grains & Cereals">
+                <div class="product-image">
+                    <img src="/assets/images/org-rice.jpg" alt="Product 3">
+                    <span class="like-btn" onclick="toggleWishlist(this)">♡</span>
+                </div>
+                <h3>Rice (1 Kg)</h3>
+                <p>₹70</p>
+                <button class="add-to-cart" onclick="addToCart(this)">Add to Cart</button>
+            </div>
+            <div class="product-card" data-category="Nuts & Seeds">
+                <div class="product-image">
+                    <img src="/assets/images/org-almonds.jpg" alt="Product 4">
+                    <span class="like-btn" onclick="toggleWishlist(this)">♡</span>
+                </div>
+                <h3>Almonds (100 g)</h3>
+                <p>₹100</p>
+                <button class="add-to-cart" onclick="addToCart(this)">Add to Cart</button>
+            </div>
+            <div class="product-card" data-category="Herbs">
+                <div class="product-image">
+                    <img src="/assets/images/org-mint.jpg" alt="Product 5">
+                    <span class="like-btn" onclick="toggleWishlist(this)">♡</span>
+                </div>
+                <h3>Mint (100 g)</h3>
+                <p>₹20</p>
+                <button class="add-to-cart" onclick="addToCart(this)">Add to Cart</button>
+            </div>
+            <div class="product-card" data-category="Plants & Trees">
+                <div class="product-image">
+                    <img src="/assets/images/org-cotton.jpg" alt="Product 5">
+                    <span class="like-btn" onclick="toggleWishlist(this)">♡</span>
+                </div>
+                <h3>Cotton (1 Kg)</h3>
+                <p>₹70</p>
+                <button class="add-to-cart" onclick="addToCart(this)">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+    <div id="message-container"></div>
+
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section social-icons">
+                <a href="https://www.linkedin.com/company/ninxify/" target="_blank">
+                    <img src="/assets/images/linkedin.png" alt="LinkedIn" class="white-icon">
+                </a>
+                <a href="https://www.instagram.com/ninxify/" target="_blank">
+                    <img src="/assets/images/Instagram.png" alt="Instagram" class="white-icon">
+                </a>
+                <a href="https://www.youtube.com/channel/UC303glYhLMP541bJISWeG8g" target="_blank">
+                    <img src="/assets/images/youtube.png" alt="YouTube" class="white-icon">
+                </a>
+            </div>
+            <div class="footer-section explore">
+                <h2>Explore</h2>
+                <div class="explore-lists">
+                    <ul>
+                        <li><a href="nix.html">Nix</a></li>
+                        <li><a href="nixorg.html">NixORG</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="nixfo.html">NixFO</a></li>
+                        <li><a href="agro_trips.html">Agro Trips</a></li>
+                    </ul>
+                </div>
+                <p>© 2024 NinX. All rights reserved.</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>Email - ninxplore@gmail.com</span>
+        </div>
+    </footer>
+
+    <script src="nixorg.js"></script>
+</body>
+
+</html>

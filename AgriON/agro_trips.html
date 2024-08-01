@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgriON | Agro Trips</title>
+    <link rel="stylesheet" href="agro_trips.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="home.html">
+                    <img src="/assets/images/agrion_logo1.jpg" alt="Logo">
+                </a>
+            </div>
+            <div class="center-nav">
+                <ul>
+                    <li><a href="home.html" class="nav-link">Home</a></li>
+                    <li><a href="nix.html" class="nav-link">Nix</a></li>
+                    <li><a href="nixorg.html" class="nav-link">NixORG</a></li>
+                    <li><a href="nixfo.html" class="nav-link">NixFO</a></li>
+                    <li><a href="agro_trips.html" class="nav-link">Agro Trips</a></li>
+                    <li><a href="about.html" class="nav-link">About Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="slider">
+        <div class="slides">
+            <div class="slide">
+                <img src="/assets/images/fo-slider1.jpg" alt="Image 1">
+                <div class="text-overlay">
+                    <h2>Students visit farms to gain practical experience in agriculture. This hands-on learning
+                        complements their classroom studies.</h2>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="/assets/images/fo-slider2.jpg" alt="Image 2">
+                <div class="text-overlay">
+                    <h2>Farmers provide valuable insights and answer student questions. This direct interaction helps
+                        deepen their understanding of farming.</h2>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="/assets/images/fo-slider3.jpg" alt="Image 3">
+                <div class="text-overlay">
+                    <h2>The trips include engaging activities that enhance theoretical knowledge. Students get to apply
+                        what they've learned in a real-world setting.</h2>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="/assets/images/fo-slider4.jpg" alt="Image 4">
+                <div class="text-overlay">
+                    <h2>These visits also build meaningful connections between students and farmers. This fosters a
+                        greater appreciation for the role of agriculture in the community.</h2>
+                </div>
+            </div>
+            <!-- Add more slides as needed -->
+        </div>
+        <div class="navigation">
+            <button class="prev">&#10094;</button>
+            <button class="next">&#10095;</button>
+        </div>
+    </div>
+
+    <!-- New Section for Text Box Card -->
+    <section class="info-box">
+        <h2>About Agro Trips</h2>
+        <p>Students visit farms through Agro Trips to experience agriculture firsthand, gaining practical knowledge that
+            complements their classroom learning. During these visits, experienced farmers share valuable insights and
+            answer questions, enriching students' understanding of farming practices. Additionally, these experiences
+            build meaningful connections between students and local farmers, fostering a deeper appreciation for
+            agriculture and its role in the community.</p>
+    </section>
+
+    <!-- New Section for Filtering -->
+<section class="filter-section">
+    <h2>Filter Farmers</h2>
+    <label for="filter-location">Location:</label>
+    <select id="filter-location">
+        <option value="">All Locations</option>
+        <option value="Nalgonda">Nalgonda</option>
+        <option value="Adilabad">Adilabad</option>
+        <option value="Warangal">Warangal</option>
+    </select>
+    
+    <label for="filter-crop">Crop:</label>
+    <select id="filter-crop">
+        <option value="">All Crops</option>
+        <option value="Wheat">Wheat</option>
+        <option value="Carrot">Carrot</option>
+        <option value="Apple">Apple</option>
+        <option value="Barley">Barley</option>
+        <option value="Cotton">Cotton</option>
+    </select>
+</section>
+
+
+<!-- Updated Section for Connecting with Farmers -->
+<section class="connect-farmers">
+    <h2>Connect with Farmers</h2>
+    <ul class="farmers-list">
+        <li class="farmer-item" data-location="Nalgonda" data-crop="Wheat, Carrot">
+            <div class="farmer-info">
+                <p><strong>Prasad</strong><br>Nalgonda<br>Wheat, Carrot</p>
+                <button class="connect-button" onclick="togglePhone('phone1')">Connect</button>
+                <p class="phone-number" id="phone1">9169314787</p>
+            </div>
+        </li>
+        <li class="farmer-item" data-location="Adilabad" data-crop="Apple, Barley">
+            <div class="farmer-info">
+                <p><strong>Venu</strong><br>Adilabad<br>Apple, Barley</p>
+                <button class="connect-button" onclick="togglePhone('phone2')">Connect</button>
+                <p class="phone-number" id="phone2">8569314753</p>
+            </div>
+        </li>
+        <li class="farmer-item" data-location="Warangal" data-crop="Cotton">
+            <div class="farmer-info">
+                <p><strong>Anjaiah</strong><br>Warangal<br>Cotton</p>
+                <button class="connect-button" onclick="togglePhone('phone3')">Connect</button>
+                <p class="phone-number" id="phone3">7639314357</p>
+            </div>
+        </li>
+    </ul>
+</section>
+
+<footer>
+    <div class="footer-content">
+        <div class="footer-section social-icons">
+            <a href="https://www.linkedin.com/company/ninxify/" target="_blank">
+                <img src="/assets/images/linkedin.png" alt="LinkedIn" class="white-icon">
+            </a>
+            <a href="https://www.instagram.com/ninxify/" target="_blank">
+                <img src="/assets/images/Instagram.png" alt="Instagram" class="white-icon">
+            </a>
+            <a href="https://www.youtube.com/channel/UC303glYhLMP541bJISWeG8g" target="_blank">
+                <img src="/assets/images/youtube.png" alt="YouTube" class="white-icon">
+            </a>
+        </div>
+        <div class="footer-section explore">
+            <h2>Explore</h2>
+            <div class="explore-lists">
+                <ul>
+                    <li><a href="nix.html">Nix</a></li>
+                    <li><a href="nixorg.html">NixORG</a></li>
+                </ul>
+                <ul>
+                    <li><a href="nixfo.html">NixFO</a></li>
+                    <li><a href="agro_trips.html">Agro Trips</a></li>
+                </ul>
+            </div>
+            <p>© 2024 NinX. All rights reserved.</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <span>Email - ninxplore@gmail.com</span>
+    </div>
+</footer>
+
+
+    <script src="agro_trpis.js"></script>
+</body>
+
+</html>

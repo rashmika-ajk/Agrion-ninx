@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@300;400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+    overflow-x: hidden;
+    position: relative;
+    transition: opacity 1s ease-in-out;
+    opacity: 1;
+    background: url('/assets/images/nix-bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: -1;
+}
+
+body.fade-out {
+    opacity: 0;
+}
+
+.logo img {
+    width: 164px;
+    border-radius: 2px;
+    margin-top: 2px;
+}
+
+.logo:hover {
+    cursor: pointer;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-family: "Segoe UI";
+    background-color: green;
+    padding: 0 20px;
+    color: white;
+}
+
+.center-nav {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.center-nav ul {
+    display: flex;
+    gap: 34px;
+}
+
+.center-nav ul li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.center-nav ul li a {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+}
+
+.center-nav ul li:hover {
+    background-color: white;
+    color: #4CAF50;
+}
+
+.center-nav ul li:hover svg path {
+    stroke: #4CAF50;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 60px);
+    padding: 20px;
+    color: #333;
+    text-align: center;
+}
+
+.content {
+    max-width: 800px;
+    background-color: rgba(255, 255, 255, 0.9); /* Light background with reduced opacity */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+h1::after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 4px;
+    background-color: #4CAF50;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -10px;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+/* footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+} */
+
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-section {
+    margin-bottom: 20px;
+}
+
+.footer-section.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.footer-section.social-icons a img.white-icon {
+    filter: invert(1);
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s;
+}
+
+.footer-section.social-icons a:hover img.white-icon {
+    transform: scale(1.1);
+}
+
+.footer-section h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.footer-section h2::after {
+    content: '';
+    display: block;
+    width: 50%;
+    height: 2px;
+    background-color: green;
+    margin: 5px auto 0;
+}
+
+.explore-lists {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.explore-lists ul {
+    list-style: none;
+    padding: 0;
+}
+
+.explore-lists ul li {
+    margin-bottom: 10px;
+}
+
+.explore-lists ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.explore-lists ul li a:hover {
+    color: green;
+    transform: translateX(5px);
+}
+
+.footer-bottom {
+    border-top: 1px solid white;
+    padding-top: 20px;
+    font-size: 1em;
+    color: #ccc;
+    letter-spacing: 1px;
+}

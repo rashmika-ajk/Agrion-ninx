@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart | NixORG</title>
+    <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="home.html">
+                    <img src="/assets/images/agrion_logo1.jpg" alt="Logo">
+                </a>
+            </div>
+            <div class="center-nav">
+                <ul>
+                    <li><a href="home.html" class="nav-link">Home</a></li>
+                    <li><a href="nix.html" class="nav-link">Nix</a></li>
+                    <li><a href="nixorg.html" class="nav-link">NixORG</a></li>
+                    <li><a href="nixfo.html" class="nav-link">NixFO</a></li>
+                    <li><a href="agro_trips.html" class="nav-link">Agro Trips</a></li>
+                    <li><a href="about.html" class="nav-link">About Us</a></li>
+                </ul>
+            </div>
+            <div class="cart-icon">
+                <a href="cart.html">
+                    <img src="/assets/images/org-cart.jpg" alt="Cart" class="cart-icon-image">
+                </a>
+            </div>
+        </nav>
+    </header>
+    <div class="cart-container">
+        <div class="cart-items-section">
+            <h2>Your Cart</h2>
+            <div class="cart-items">
+                <!-- Cart items will be dynamically loaded here -->
+            </div>
+        </div>
+        <div class="order-summary">
+            <h2>Place Order</h2>
+            <div class="order-items">
+                <!-- Order items and details will be dynamically loaded here -->
+            </div>
+            <div class="order-total">
+                <p>Subtotal: ₹<span id="subtotal">0</span></p>
+                <p>Tax (5%): ₹<span id="tax">0</span></p>
+                <p><strong>Total: ₹<span id="total">0</span></strong></p>
+                <button class="place-order-btn">Confirm Order</button>
+            </div>
+        </div>
+    </div>
+    <script src="cart.js"></script>
+</body>
+</html>

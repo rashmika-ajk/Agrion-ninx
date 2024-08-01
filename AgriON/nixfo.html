@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgriON | NixFO</title>
+    <link rel="stylesheet" href="nixfo.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="home.html">
+                    <img src="/assets/images/agrion_logo1.jpg" alt="Logo">
+                </a>
+            </div>
+            <div class="center-nav">
+                <ul>
+                    <li><a href="home.html" class="nav-link">Home</a></li>
+                    <li><a href="nix.html" class="nav-link">Nix</a></li>
+                    <li><a href="nixorg.html" class="nav-link">NixORG</a></li>
+                    <li><a href="nixfo.html" class="nav-link">NixFO</a></li>
+                    <li><a href="agro_trips.html" class="nav-link">Agro Trips</a></li>
+                    <li><a href="about.html" class="nav-link">About Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="content-container">
+        <div class="sidebar">
+            <h2>Categories</h2>
+            <ul id="category-list">
+                <li onclick="filterPosts('All')" class="category-item">All Categories</li>
+                <li onclick="filterPosts('Crop Management')" class="category-item">Crop Management</li>
+                <li onclick="filterPosts('Soil Health & Fertility')" class="category-item">Soil Health & Fertility</li>
+                <li onclick="filterPosts('Pest & Disease Control')" class="category-item">Pest & Disease Control</li>
+                <li onclick="filterPosts('Irrigation Techniques')" class="category-item">Irrigation Techniques</li>
+                <li onclick="filterPosts('Planting & Harvesting')" class="category-item">Planting & Harvesting</li>
+                <li onclick="filterPosts('Organic Farming')" class="category-item">Organic Farming</li>
+                <li onclick="filterPosts('Gardening Tips')" class="category-item">Gardening Tips</li>
+                <li onclick="filterPosts('Farm Equipment & Technology')" class="category-item">Farm Equipment & Technology</li>
+                <li onclick="filterPosts('Weather & Climate Impact')" class="category-item">Weather & Climate Impact</li>
+                <li onclick="filterPosts('Sustainable Practices')" class="category-item">Sustainable Practices</li>
+                <li onclick="filterPosts('Livestock Care')" class="category-item">Livestock Care</li>
+                <li onclick="filterPosts('Market Trends & Economics')" class="category-item">Market Trends & Economics</li>
+                <li onclick="filterPosts('Soil & Water Conservation')" class="category-item">Soil & Water Conservation</li>
+                <li onclick="filterPosts('Seed Selection & Varieties')" class="category-item">Seed Selection & Varieties</li>
+                <li onclick="filterPosts('Community Stories & Experiences')" class="category-item">Community Stories & Experiences</li>
+            </ul>
+        </div>
+        <div class="main-content" id="posts-container">
+            <div class="post-card" data-category="Crop Management">
+                <div class="post-header">
+                    <strong>Arjun Luthra</strong>
+                </div>
+                <div class="post-content">
+                    <p><strong>Maximizing Crop Yields: Smart Crop Management Tips 🌾</strong></p>
+                    <p>Effective crop management can make a huge difference in your harvest. Start with soil testing to understand your field's needs. Rotate your crops to maintain soil health and reduce pest issues. Keep track of weather patterns and adjust planting schedules accordingly. Implement precision agriculture techniques to optimize resource use and boost productivity. Happy farming!</p>
+                </div>
+                <div class="post-actions">
+                    <button class="like-btn" onclick="likePost(this)">Like</button>
+                    <button class="comment-btn">Comment</button>
+                </div>
+            </div>
+            <div class="post-card" data-category="Soil Health & Fertility">
+                <div class="post-header">
+                    <strong>Sakhi Mukherjee</strong>
+                </div>
+                <div class="post-content">
+                    <p><strong>Boost Your Soil Health for Thriving Crops 🌱</strong></p>
+                    <p>Healthy soil is the foundation of a successful farm. Regularly add organic matter like compost or manure to enhance soil fertility. Practice no-till farming to preserve soil structure and prevent erosion. Test your soil to monitor nutrient levels and adjust fertilization practices as needed. Remember, healthy soil leads to healthy plants!</p>
+                </div>
+                <div class="post-actions">
+                    <button class="like-btn" onclick="likePost(this)">Like</button>
+                    <button class="comment-btn">Comment</button>
+                </div>
+            </div>
+            <div class="post-card" data-category="Pest & Disease Control">
+                <div class="post-header">
+                    <strong>Vikram Khanna</strong>
+                </div>
+                <div class="post-content">
+                    <p><strong>Protect Your Crops: Effective Pest & Disease Management 🦠</strong></p>
+                    <p>Preventative measures are key to managing pests and diseases. Start with resistant crop varieties and practice good sanitation to reduce risks. Monitor your crops regularly for signs of trouble and use integrated pest management (IPM) techniques to address issues. Keep your farm clean and avoid overusing chemicals to prevent resistance. Stay proactive for a healthy harvest!</p>
+                </div>
+                <div class="post-actions">
+                    <button class="like-btn" onclick="likePost(this)">Like</button>
+                    <button class="comment-btn">Comment</button>
+                </div>
+            </div>
+            <div class="post-card" data-category="Irrigation Techniques">
+                <div class="post-header">
+                    <strong>Pavan Murthi</strong>
+                </div>
+                <div class="post-content">
+                    <p><strong>Optimize Your Irrigation for Better Yields 💧</strong></p>
+                    <p>Efficient irrigation is crucial for crop success. Consider implementing drip irrigation to target water directly to the roots, reducing waste. Adjust watering schedules based on weather conditions and crop needs. Use soil moisture sensors to guide your irrigation practices and ensure you're using water wisely. Efficient irrigation means healthier plants and lower water costs!</p>
+                </div>
+                <div class="post-actions">
+                    <button class="like-btn" onclick="likePost(this)">Like</button>
+                    <button class="comment-btn">Comment</button>
+                </div>
+            </div>
+            <div class="post-card" data-category="Planting & Harvesting">
+                <div class="post-header">
+                    <strong>Pakhi Khurrana</strong>
+                </div>
+                <div class="post-content">
+                    <p><strong>Master the Art of Planting & Harvesting for Top Results 🌽</strong></p>
+                    <p>Timing is everything when it comes to planting and harvesting. Plant at the optimal depth and spacing for your crop to ensure strong growth. Keep an eye on maturity indicators to determine the best harvest time. Proper handling during harvesting prevents damage and ensures quality. With the right techniques, you’ll enjoy a bountiful and high-quality harvest!</p>
+                </div>
+                <div class="post-actions">
+                    <button class="like-btn" onclick="likePost(this)">Like</button>
+                    <button class="comment-btn">Comment</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="message-container"></div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section social-icons">
+                <a href="https://www.linkedin.com/company/ninxify/" target="_blank">
+                    <img src="/assets/images/linkedin.png" alt="LinkedIn" class="white-icon">
+                </a>
+                <a href="https://www.instagram.com/ninxify/" target="_blank">
+                    <img src="/assets/images/Instagram.png" alt="Instagram" class="white-icon">
+                </a>
+                <a href="https://www.youtube.com/channel/UC303glYhLMP541bJISWeG8g" target="_blank">
+                    <img src="/assets/images/youtube.png" alt="YouTube" class="white-icon">
+                </a>
+            </div>
+            <div class="footer-section explore">
+                <h2>Explore</h2>
+                <div class="explore-lists">
+                    <ul>
+                        <li><a href="nix.html">Nix</a></li>
+                        <li><a href="nixorg.html">NixORG</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="nixfo.html">NixFO</a></li>
+                        <li><a href="agro_trips.html">Agro Trips</a></li>
+                    </ul>
+                </div>
+                <p>© 2024 NinX. All rights reserved.</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>Email - ninxplore@gmail.com</span>
+        </div>
+    </footer>
+    
+    <script src="nixfo.js"></script>
+</body>
+</html>
